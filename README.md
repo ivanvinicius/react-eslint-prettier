@@ -1,6 +1,6 @@
-# Default eslint, prettier and editorConfig to use in a RaeactJS project
+## React eslint prettier
 
-# VScode extensions
+### VScode extensions
   - bracket pair colorizer
   - color highlight
   - docs-preview
@@ -15,9 +15,9 @@
   - SQLite
   - vscode-styled-components
 
-# VSCode settings
+### VSCode settings
   - ctrl+shift+p 
-  ## settings.json
+  #### settings.json
 
     {
       "breadcrumbs.enabled": true,
@@ -104,8 +104,8 @@
       },
     }
 
-# EditorConfig
-  ## .editorconfig
+### EditorConfig
+  #### .editorconfig
 
     root = true
     [*]
@@ -116,20 +116,20 @@
     trim_trailing_whitespace = true
     insert_final_newline = true
 
-# Eslint
+### Eslint
   - yarn add eslint -D
   - yarn eslint --init
   - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latesteslint -D
   - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
   - yarn add eslint-import-resolver-typescript -D  
 
-  ## .eslintignore
+  #### .eslintignore
 
     **/*.js
     node_modules
     build
 
-  ## .eslintrc.json
+  #### .eslintrc.json
 
     {
     "env": {
@@ -198,8 +198,8 @@
     }
   }
 
-# Prettier
-  ## prettier.config.js
+### Prettier
+  #### prettier.config.js
 
     module.exports = {
       singleQuote: true,

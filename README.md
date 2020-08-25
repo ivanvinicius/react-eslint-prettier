@@ -91,16 +91,23 @@
         "repositories": "mappings",
         "http": "container",
         "migrations": "tools",
-        "modules": "components",
+        "modules": "layout",
         "implementations": "core",
         "dtos": "typescript",
         "fakes": "mock",
+        "store": "redux-store",
+        "ducks": "firebase",
         "measures": ""
       },
-      
+
       "material-icon-theme.files.associations": {
         "tsconfig.json": "tune",
-        "ormconfig.json": "database"
+        "ormconfig.json": "database",
+        "actions.ts": "asciidoc",
+        "sagas.ts": "stylus",
+        "types.ts": "tilt",
+        "rootReducer.ts": "redux-reducer",
+        "rootSaga.ts": "redux-store",
       },
     }
 
@@ -119,9 +126,7 @@
 ### Eslint
   - yarn add eslint -D
   - yarn eslint --init
-  - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latesteslint -D
-  - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
-  - yarn add eslint-import-resolver-typescript -D  
+  - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latesteslint prettier eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-typescript -D  
 
   #### .eslintignore
 

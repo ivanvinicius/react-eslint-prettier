@@ -126,7 +126,7 @@
 ### Eslint
   - yarn add eslint -D
   - yarn eslint --init
-  - copy the npm command and install with yarn using eslint@latest version
+  - - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latesteslint -D
   - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
   - yarn add eslint-import-resolver-typescript -D
   

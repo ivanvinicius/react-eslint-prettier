@@ -20,7 +20,7 @@
 
   - ctrl+shift+p 
   #### settings.json
-  
+  ```json
     {
       "breadcrumbs.enabled": true,
 
@@ -112,10 +112,11 @@
         "rootSaga.ts": "redux-store",
       },
     }
+```
 
 ### EditorConfig
   #### .editorconfig
-  
+  ```
     root = true
     
     [*]
@@ -125,6 +126,7 @@
     charset = utf-8
     trim_trailing_whitespace = true
     insert_final_newline = true
+```
 
 ### Eslint
 
@@ -134,12 +136,14 @@
 
   
   #### .eslintignore
+```json
 **/*.js
 node_modules
 build
+```
 
   #### .eslintrc.json
-  
+```json
 {
   "env": {
     "browser": true,
@@ -215,3 +219,4 @@ build
       trailingComma: 'all',
       allowParens: 'avoid',
     };
+    ```

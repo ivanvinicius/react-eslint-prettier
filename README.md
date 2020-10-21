@@ -1,12 +1,10 @@
 ## React eslint prettier
 
 ### VScode extensions
-
-  - bracket pair colorizer
   - color highlight
   - docs-preview
   - DotENV
-  - Omni (theme)
+  - Omni
   - EditorConfig for VS Code
   - Eslint
   - Material Icon Theme
@@ -17,8 +15,6 @@
   - vscode-styled-components
 
 ### VSCode settings
-
-  - ctrl+shift+p 
   #### settings.json
   ```json
     {
@@ -54,7 +50,7 @@
       "typescript.updateImportsOnFileMove.enabled": "never",
 
       "workbench.iconTheme": "material-icon-theme",
-      "workbench.colorTheme": "Dracula",
+      "workbench.colorTheme": "Omni",
       "window.zoomLevel": 0,
       "workbench.startupEditor": "newUntitledFile",
       "workbench.editor.labelFormat": "short",
@@ -112,11 +108,11 @@
         "rootSaga.ts": "redux-store",
       },
     }
-```
+  ```
 
 ### EditorConfig
   #### .editorconfig
-  ```
+  ```js
     root = true
     
     [*]
@@ -126,98 +122,101 @@
     charset = utf-8
     trim_trailing_whitespace = true
     insert_final_newline = true
-```
-
-### Eslint
-
-- yarn add eslint@^6.6.0 -D
-- yarn eslint --init
-- yarn add eslint-plugin-react@^7.20.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.21.2 eslint-plugin-jsx-a11y@^6.3.0 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest prettier eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-typescript -D
-
-  #### .eslintignore
-```json
-**/*.js
-node_modules
-build
-```
-
-  #### .eslintrc.json
-```json
-{
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-  ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
-  "rules": {
-    "import/no-extraneous-dependencies": "off",
-    "camelcase": "off",
-    "prettier/prettier": "error",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
-    "jsx-a11y/label-has-associated-control": "off",
-    "@typescript-eslint/ban-types": "off",
-    "no-unused-expressions": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "import/prefer-default-export": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "interface",
-        "format": ["PascalCase"],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": true
-        }
-      }
-    ],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
-  }
-}
-```
-
+  ```
+  
 ### Prettier
   #### prettier.config.js
-
-```json 
+  ```js
     module.exports = {
       singleQuote: true,
       trailingComma: 'all',
       allowParens: 'avoid',
     };
-```
+  ```
+
+### Eslint
+  ```console
+    yarn add eslint@^6.6.0 -D
+  ```
+  ```console
+  yarn eslint --init
+  ```
+  ```console
+  yarn add eslint-plugin-react@^7.20.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.21.2 eslint-plugin-jsx-a11y@^6.3.0 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest prettier eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-typescript -D
+  ```
+  #### .eslintignore
+  ```js
+    **/*.js
+    node_modules
+    build
+  ```
+
+  #### .eslintrc.json
+  ```json
+    {
+      "env": {
+        "browser": true,
+        "es6": true
+      },
+      "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
+      ],
+      "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+      },
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+      },
+      "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off",
+        "camelcase": "off",
+        "prettier/prettier": "error",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "@typescript-eslint/ban-types": "off",
+        "no-unused-expressions": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "interface",
+            "format": ["PascalCase"],
+            "custom": {
+              "regex": "^I[A-Z]",
+              "match": true
+            }
+          }
+        ],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "ts": "never",
+            "tsx": "never"
+          }
+        ]
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      }
+    }
+  ```

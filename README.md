@@ -18,7 +18,6 @@
 ### VSCode settings
   - ctrl+shift+p 
   #### settings.json
-
     {
       "breadcrumbs.enabled": true,
 
@@ -113,7 +112,6 @@
 
 ### EditorConfig
   #### .editorconfig
-
     root = true
     
     [*]
@@ -131,13 +129,11 @@
 
   
   #### .eslintignore
-
     **/*.js
     node_modules
     build
 
   #### .eslintrc.json
-
     {
       "env": {
         "browser": true,
@@ -203,11 +199,10 @@
           "typescript": {}
         }
       }
-    }
+    } 
 
 ### Prettier
   #### prettier.config.js
-
     module.exports = {
       singleQuote: true,
       trailingComma: 'all',

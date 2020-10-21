@@ -5,7 +5,7 @@
   - color highlight
   - docs-preview
   - DotENV
-  - Dracula Offial
+  - Omni (theme)
   - EditorConfig for VS Code
   - Eslint
   - Material Icon Theme
@@ -115,6 +115,7 @@
   #### .editorconfig
 
     root = true
+    
     [*]
     end_of_line = lf
     indent_style = space
@@ -124,11 +125,10 @@
     insert_final_newline = true
 
 ### Eslint
-  - yarn add eslint -D
-  - yarn eslint --init
-  - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latesteslint -D
-  - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
-  - yarn add eslint-import-resolver-typescript -D
+- yarn add eslint@^6.6.0 -D
+- yarn eslint --init
+- yarn add eslint-plugin-react@^7.20.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.21.2 eslint-plugin-jsx-a11y@^6.3.0 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest prettier eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-typescript -D
+
   
   #### .eslintignore
 

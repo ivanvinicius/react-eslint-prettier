@@ -136,7 +136,7 @@
 
 ### Eslint
   ```console
-    yarn add eslint@^6.6.0 -D
+  yarn add eslint@^6.6.0 -D
   ```
   ```console
   yarn eslint --init

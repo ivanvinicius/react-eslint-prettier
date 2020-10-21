@@ -134,7 +134,6 @@
 - yarn eslint --init
 - yarn add eslint-plugin-react@^7.20.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@ eslint-plugin-import@^2.21.2 eslint-plugin-jsx-a11y@^6.3.0 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest prettier eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-typescript -D
 
-  
   #### .eslintignore
 ```json
 **/*.js
@@ -214,11 +213,11 @@ build
 
 ### Prettier
   #### prettier.config.js
-  
- ```json 
+
+```json 
     module.exports = {
       singleQuote: true,
       trailingComma: 'all',
       allowParens: 'avoid',
     };
-    ```
+```

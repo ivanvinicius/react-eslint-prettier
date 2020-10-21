@@ -210,10 +210,12 @@ build
     }
   }
 }
+```
 
 ### Prettier
   #### prettier.config.js
   
+ ```json 
     module.exports = {
       singleQuote: true,
       trailingComma: 'all',
